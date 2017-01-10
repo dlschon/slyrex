@@ -1,0 +1,61 @@
+﻿$height-mobile: 240px;
+
+.body-content {
+        padding-top: 20px;
+}
+
+.logo {
+    width: 360px;
+    height: 180px;
+    margin-top: -215px;
+    margin-bottom: 25px;
+}
+
+.wide-header {
+    letter-spacing: .5em
+}
+
+.info {
+}
+
+#player-description {
+        text-align: center;
+        margin: 30px auto;
+        margin-top: 0;
+        width: 250px;
+    }
+
+#navigationBar > ul > li > a {
+        padding:0px 10px;
+    }
+
+.main-info {
+    padding-top: 130px;
+}
+
+#sample {
+    margin-bottom: 50px;
+}
+
+.sidebar {
+    width: 90%;
+    padding: .2em;
+    margin: {
+        left: 5%;
+        right: 5%;
+        top: 1em;
+        bottom: 1em;
+    }
+
+    img {
+        width: 25%;
+        padding: .2em;
+    }
+}
+
+
+
+.background {
+
+    height: $height-mobile;
+}

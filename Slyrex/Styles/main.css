@@ -1,0 +1,85 @@
+﻿a {
+  color: #fff; }
+
+html,
+body,
+svg {
+  display: block;
+  height: 100%;
+  color: white;
+  font-family: Futura, Century Gothic, sans-serif;
+  text-rendering: optimizeLegibility;
+  margin: auto; }
+
+body {
+  background-color: #333; }
+
+.logo {
+  max-width: 80%; }
+
+#navigationBar {
+  height: auto;
+  text-align: center;
+  width: 100%;
+  margin-top: -70px; }
+  #navigationBar ul {
+    padding: 0; }
+    #navigationBar ul li {
+      display: inline; }
+      #navigationBar ul li a {
+        display: inline-block;
+        height: 60px;
+        line-height: 60px;
+        margin: 0px;
+        text-decoration: none;
+        transition: color 0.3s ease-in; }
+        #navigationBar ul li a:hover {
+          color: #FCD000; }
+
+.main-page {
+  box-shadow: 5px -5px 12px 0px #000;
+  background: url("/Resources/linen.png") repeat; }
+
+.background {
+  position: static;
+  width: 100%;
+  top: 0;
+  z-index: -1; }
+
+.sidebar {
+  display: inline;
+  float: left;
+  font-size: 1.1em;
+  border-bottom-style: solid;
+  border-bottom-color: white;
+  border-bottom-width: 2px;
+  border-top-style: solid;
+  border-top-color: white;
+  border-top-width: 2px; }
+  .sidebar img {
+    height: auto;
+    float: left;
+    display: block; }
+
+.main-info {
+  padding-top: 0;
+  font-size: 125%;
+  text-align: center; }
+  .main-info h1 {
+    text-align: center; }
+  .main-info p {
+    font-size: 1.25em; }
+
+.header-wrap {
+  display: inline-block;
+  padding-left: .5em;
+  padding-right: .5em;
+  padding-top: .25em;
+  padding-bottom: .25em;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: white;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: white; }
+

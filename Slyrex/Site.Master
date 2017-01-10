@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Slyrex.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %></title>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <asp:contentPlaceholder id="head" runat="server" />
+
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="respond" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <script src="Scripts/main.js";></script>
+        <script src="Scripts/parallax.min.js";></script>
+
+        <div class="background" data-parallax="scroll" data-image-src="/Resources/background.jpg" data-speed=".3" data-naturalHeight:"1200" data-naturalWidth:"800" data-bleed:"20" data-position:"top" data-androidFix:"false"></div>
+
+        <svg class="logo" viewBox="0 0 200 50" fill="currentColor">
+            <line x1="10" x2="190" y1="12" y2="12" stroke="currentColor"/>
+            <text textLength="200" x="12" y="30">SLYREX</text>
+            <line x1="10" x2="190" y1="37" y2="37" stroke="currentColor"/>
+        </svg>
+
+        <nav id="navigationBar">
+          <ul>
+            <li>
+              <a href="Default.aspx" class="link" id="nav-default">Music</a>
+            </li>
+            <li>
+              <a href="News.aspx" class="link" id="nav-news">News</a>
+            </li>
+            <li>
+              <a href="Store.aspx" class="link" id="nav-store">Store</a>
+            </li>
+            <li>
+              <a href="Photos.aspx" class="link" id="nav-photos">Photos</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="main-page">
+            <div class="container body-content">
+                <div class="info">
+                    <div class="sidebar">
+
+                        <a href="https://soundcloud.com/slyrex"><img src="/Resources/soundcloud-min.png" /></a>
+                        <a href="https://slyrex.bandcamp.com/"><img src="/Resources/bc-min.png" /></a>
+                        <a href="https://twitter.com/slyrexet"><img src="/Resources/twitter-min.png" /></a>
+                        <a href="https://www.facebook.com/Slyrexet/"><img src="/Resources/fb-min.png" /></a>
+
+                    </div>
+                    <div class="main-info">
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <p>&copy; <%: DateTime.Now.Year %> - Slyrex </p>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>

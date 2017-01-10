@@ -1,0 +1,34 @@
+﻿[
+  {
+    "outputFile": "Styles/main.css",
+    "inputFile": "Styles/main.scss"
+  },
+  {
+    "outputFile": "Styles/player.css",
+    "inputFile": "Styles/player.scss"
+  },
+  {
+    "outputFile": "Styles/main-desktop.css",
+    "inputFile": "Styles/main-desktop.scss"
+  },
+  {
+    "outputFile": "Styles/main-mobile.css",
+    "inputFile": "Styles/main-mobile.scss"
+  },
+  {
+    "outputFile": "Styles/store.css",
+    "inputFile": "Styles/store.scss"
+  },
+  {
+    "outputFile": "Styles/default.css",
+    "inputFile": "Styles/default.scss"
+  },
+  {
+    "outputFile": "Styles/news.css",
+    "inputFile": "Styles/news.scss"
+  },
+  {
+    "outputFile": "Styles/photos.css",
+    "inputFile": "Styles/photos.scss"
+  }
+]

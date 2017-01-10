@@ -1,0 +1,24 @@
+﻿
+@media screen and (min-width: 480px)
+{
+    .coming-soon {
+        height: 50px;
+        margin-top: 150px;
+        margin-bottom: 200px;
+        letter-spacing: .4em;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .coming-soon {
+
+        margin-top: 50px;
+        margin-bottom: 100px;
+        letter-spacing: .25em;
+    }
+}
+
+#nav-store {
+    color:#FCD000;
+}
