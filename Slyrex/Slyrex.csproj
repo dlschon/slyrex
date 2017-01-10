@@ -191,6 +191,11 @@
     <Content Include="Resources\loader.png" />
     <Content Include="Resources\sample.xml" />
     <Content Include="Resources\rss.xml" />
+    <Content Include="Resources\Slideshow\img3.jpg" />
+    <Content Include="Resources\Slideshow\img2.jpg" />
+    <Content Include="Resources\Slideshow\img4.jpg" />
+    <Content Include="Resources\Slideshow\img1.jpg" />
+    <Content Include="Scripts\EasyFader.js" />
     <Content Include="Scripts\rss.js" />
     <Content Include="Photos.aspx" />
     <Content Include="Store.aspx" />

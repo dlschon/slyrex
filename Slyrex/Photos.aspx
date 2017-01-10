@@ -17,8 +17,18 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     
-    <div class="coming-soon">
-        <h1> Store coming soon </h1>
-    </div>
+    <script src="Scripts/EasyFader.js";></script>
 
+    <div id="Fader" class="fader">
+      <img class="slide" src="/Resources/Slideshow/img1.jpg"/>
+      <img class="slide" src="/Resources/Slideshow/img2.jpg"/>
+      <img class="slide" src="/Resources/Slideshow/img3.jpg"/>
+        <img class="slide" src="/Resources/Slideshow/img4.jpg"/>
+        <div class="fader_controls">
+          <div class="page prev" data-target="prev">&lsaquo;</div>
+          <div class="page next" data-target="next">&rsaquo;</div>
+          <ul class="pager_list"></ul>
+        </div>
+    </div>
+    
 </asp:Content>
