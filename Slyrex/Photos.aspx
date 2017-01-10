@@ -3,13 +3,15 @@
 <asp:content contentplaceholderid="head" runat="server">
 
     <link href="/Styles/main.css" rel="stylesheet">
-    <link href="/Styles/photos.css" rel="stylesheet">
+    
     
     <link href="/Styles/main-desktop.css" rel="stylesheet" media="screen and (min-width: 480px)">
     <link href="/Styles/main-mobile.css" rel="stylesheet" media="screen and (max-width: 480px)">
 
     <link href="/Styles/carousel-desktop.css" rel="stylesheet" media="screen and (min-width: 480px)">
     <link href="/Styles/carousel-mobile.css" rel="stylesheet" media="screen and (max-width: 480px)">
+
+    <link href="/Styles/photos.css" rel="stylesheet">
 
     
 
