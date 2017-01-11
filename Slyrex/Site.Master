@@ -86,7 +86,8 @@
 
         <footer>
             <div class="container">
-                <p>&copy; <%: DateTime.Now.Year %> - Slyrex </p>
+                <p class="footer-left">&copy; <%: DateTime.Now.Year %> - Daniel Schon </p>
+                <p class="footer-right">dlschon0@gmail.com<br />319-826-4861</p>
             </div>
         </footer>
     </form>

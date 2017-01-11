@@ -1,45 +1,43 @@
-﻿var url = "https://rssfeedaccount.tumblr.com/rss"
+﻿var url = "/Resources/sample.xml";//"https://rssfeedaccount.tumblr.com/rss"
 
 $(document).ready(function () {
     console.log('start', url);
-    getData(url).then(function (retrievedData) {
-
-        $(".loader").remove();
-        $("h4").remove();
-        $(".container").css("display", "flex")
-
-        console.log(retrievedData);
-        insertData(retrievedData);
-    });
+    getData(url)
 });
 
 var insertData = function (entries) {
     $.each(entries, function (i, entry) {
-        let content = removeShit(entry.content);
-        console.log(entry);
-        if (content.includes("<img"))
-            $('ul.titles').append(`<li><div class='content'><span class='content-line'></span>${content}</div></li>`);
-        else
-            $('ul.titles').append(`<li>${entry.title}<div class='content'><span class='content-line'></span>${content}</div></li>`);
+        
     });
 };
 
 var getData = function (url) {
-    return new Promise(function (resolve, reject) {
-        $.ajax({
-            url: document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent(url),
-            dataType: 'json',
-            success: function (data) {
-                console.log(data);
-                if (data.responseData.feed && data.responseData.feed.entries) {
-                    resolve(data.responseData.feed.entries);
+
+    $.get(url, function (data) {
+        var $xml = $(data);
+        $xml.find("item").each(function () {
+            var $this = $(this),
+                item = {
+                    title: $this.find("title").text(),
+                    link: $this.find("link").text(),
+                    description: $this.find("description").html(),
+                    pubDate: $this.find("pubDate").text(),
+                    author: $this.find("author").text()
                 }
-            },
-            error: function (err) {
-                reject(err);
-            }
+
+            console.log(item.description);
+
+            let content = removeShit(item.description);
+
+            if (content.includes("<img"))
+                $('ul.titles').append(`<li><div class='content'><span class='content-line'></span>${content}</div></li>`);
+            else
+                $('ul.titles').append(`<li>${item.title}<div class='content'><span class='content-line'></span>${content}</div></li>`);
         });
 
+        $(".loader").remove();
+        $("h4").remove();
+        $(":not(footer) > .container").css("display", "flex")
     });
 
 };

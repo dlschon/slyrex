@@ -188,6 +188,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="News.aspx" />
+    <Content Include="Resources\bc-min.png" />
+    <Content Include="Resources\fb-min.png" />
     <Content Include="Resources\loader.png" />
     <Content Include="Resources\sample.xml" />
     <Content Include="Resources\rss.xml" />
@@ -195,6 +197,8 @@
     <Content Include="Resources\Slideshow\img2.jpg" />
     <Content Include="Resources\Slideshow\img4.jpg" />
     <Content Include="Resources\Slideshow\img1.jpg" />
+    <Content Include="Resources\soundcloud-min.png" />
+    <Content Include="Resources\twitter-min.png" />
     <Content Include="Scripts\EasyFader.js" />
     <Content Include="Scripts\rss.js" />
     <Content Include="Photos.aspx" />
@@ -253,6 +257,8 @@
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
+    <None Include="Properties\PublishProfiles\slyrex.com - Web Deploy %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\slyrex.com - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\ai.0.22.19-build00125.js" />
     <Content Include="Scripts\ai.0.22.19-build00125.min.js" />
