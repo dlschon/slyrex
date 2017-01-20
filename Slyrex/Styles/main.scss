@@ -22,8 +22,34 @@ body {
     background-color: #333;
 }
 
-.logo {
+.logo, .logo-chrome {
     max-width: 80%;
+}
+
+.logo {
+    visibility: hidden;
+}
+
+@-moz-document url-prefix() {
+    .logo-chrome {
+        visibility: hidden;
+        display: none;
+    }
+
+    .logo {
+        visibility: visible;
+    }
+}
+
+@supports (-ms-ime-align:auto) {
+  .logo-chrome {
+        visibility: hidden;
+        display: none;
+    }
+
+    .logo {
+        visibility: visible;
+    } 
 }
 
 .info {
@@ -114,7 +140,7 @@ body {
         text-align:center;
     }
     p {
-        font-size: 1.25em;
+        //font-size: 1.25em;
     }
 }
 

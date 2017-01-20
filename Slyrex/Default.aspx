@@ -1,16 +1,17 @@
 ﻿<%@ Page Title="SLYREX" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Slyrex._Default" %>
 
 <asp:content contentplaceholderid="head" runat="server">
-    <link href="/Styles/main.css" rel="stylesheet">
+    
     <link href="/Styles/default.css" rel="stylesheet">
     
     <link href="/Styles/player.css" rel="stylesheet">
 
-    <link href="/Styles/main-desktop.css" rel="stylesheet" media="screen and (min-width: 480px)">
-    <link href="/Styles/main-mobile.css" rel="stylesheet" media="screen and (max-width: 480px)">
+    
 
-    <link href="/Styles/carousel-desktop.css" rel="stylesheet" media="screen and (min-width: 480px)">
+    <link href="/Styles/carousel-desktop.css" rel="stylesheet" media="screen and (min-width: 481px)">
     <link href="/Styles/carousel-mobile.css" rel="stylesheet" media="screen and (max-width: 480px)">
+
+
 
     
 

@@ -14,8 +14,25 @@ svg {
 body {
   background-color: #333; }
 
-.logo {
+.logo, .logo-chrome {
   max-width: 80%; }
+
+.logo {
+  visibility: hidden; }
+
+@-moz-document url-prefix() {
+  .logo-chrome {
+    visibility: hidden;
+    display: none; }
+  .logo {
+    visibility: visible; } }
+
+@supports (-ms-ime-align: auto) {
+  .logo-chrome {
+    visibility: hidden;
+    display: none; }
+  .logo {
+    visibility: visible; } }
 
 .info {
   max-width: 100%; }
@@ -70,8 +87,6 @@ body {
   text-align: center; }
   .main-info h1 {
     text-align: center; }
-  .main-info p {
-    font-size: 1.25em; }
 
 .header-wrap {
   display: inline-block;

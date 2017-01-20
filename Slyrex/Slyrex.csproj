@@ -193,13 +193,31 @@
     <Content Include="Resources\loader.png" />
     <Content Include="Resources\sample.xml" />
     <Content Include="Resources\rss.xml" />
-    <Content Include="Resources\Slideshow\img3.jpg" />
-    <Content Include="Resources\Slideshow\img2.jpg" />
-    <Content Include="Resources\Slideshow\img4.jpg" />
-    <Content Include="Resources\Slideshow\img1.jpg" />
+    <Content Include="Resources\Slideshow\1-small.JPG" />
+    <Content Include="Resources\Slideshow\1.JPG" />
+    <Content Include="Resources\Slideshow\10-small.JPG" />
+    <Content Include="Resources\Slideshow\10.JPG" />
+    <Content Include="Resources\Slideshow\2-small.JPG" />
+    <Content Include="Resources\Slideshow\2.JPG" />
+    <Content Include="Resources\Slideshow\3-small.JPG" />
+    <Content Include="Resources\Slideshow\3.JPG" />
+    <Content Include="Resources\Slideshow\4-small.JPG" />
+    <Content Include="Resources\Slideshow\4.JPG" />
+    <Content Include="Resources\Slideshow\5-small.JPG" />
+    <Content Include="Resources\Slideshow\5.JPG" />
+    <Content Include="Resources\Slideshow\6-small.JPG" />
+    <Content Include="Resources\Slideshow\6.JPG" />
+    <Content Include="Resources\Slideshow\7-small.JPG" />
+    <Content Include="Resources\Slideshow\7.JPG" />
+    <Content Include="Resources\Slideshow\8-small.JPG" />
+    <Content Include="Resources\Slideshow\8.JPG" />
+    <Content Include="Resources\Slideshow\9-small.JPG" />
+    <Content Include="Resources\Slideshow\9.JPG" />
     <Content Include="Resources\soundcloud-min.png" />
     <Content Include="Resources\twitter-min.png" />
-    <Content Include="Scripts\EasyFader.js" />
+    <Content Include="Scripts\photos.js" />
+    <Content Include="Scripts\Photoswipe\photoswipe-ui-default.min.js" />
+    <Content Include="Scripts\Photoswipe\photoswipe.min.js" />
     <Content Include="Scripts\rss.js" />
     <Content Include="Photos.aspx" />
     <Content Include="Store.aspx" />
@@ -306,6 +324,9 @@
     <Content Include="Styles\photos.min.css">
       <DependentUpon>photos.css</DependentUpon>
     </Content>
+    <Content Include="Styles\Photoswipe\default-skin.css" />
+    <Content Include="Styles\Photoswipe\photoswipe.css" />
+    <Content Include="Styles\Photoswipe\site.css" />
     <Content Include="Styles\player.css">
       <DependentUpon>player.scss</DependentUpon>
     </Content>

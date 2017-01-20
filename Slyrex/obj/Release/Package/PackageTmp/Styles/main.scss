@@ -1,0 +1,194 @@
+﻿@mixin shadow() {
+    box-shadow: 5px -5px 12px 0px #000
+}
+
+a {
+    color:#fff;
+}
+
+html,
+body,
+svg
+{
+  display: block;
+  height: 100%;
+  color: white;
+  font-family: Futura, Century Gothic, sans-serif;
+  text-rendering: optimizeLegibility;
+  margin: auto;
+}
+
+body {
+    background-color: #333;
+}
+
+.logo, .logo-chrome {
+    max-width: 80%;
+}
+
+.logo {
+    visibility: hidden;
+}
+
+@-moz-document url-prefix() {
+    .logo-chrome {
+        visibility: hidden;
+        display: none;
+    }
+
+    .logo {
+        visibility: visible;
+    }
+}
+
+@supports (-ms-ime-align:auto) {
+  .logo-chrome {
+        visibility: hidden;
+        display: none;
+    }
+
+    .logo {
+        visibility: visible;
+    } 
+}
+
+.info {
+    max-width: 100%;
+}
+
+#navigationBar {
+  height:auto;
+  text-align:center;
+  width:100%;
+  margin-top: -70px;
+
+    ul {
+        padding: 0;
+
+        li {
+            display:inline;
+
+            a
+            {
+                
+                display:inline-block;
+                height:60px;
+                line-height:60px;
+                margin:0px;
+                
+                text-decoration:none;
+                transition: color 0.3s ease-in;
+
+                &:hover {
+                  color:#FCD000;
+                }
+            }
+        }
+    }
+}
+
+
+.main-page {
+    @include shadow();
+    background:
+        url("/Resources/linen.png")
+        repeat;
+}
+
+.background {
+  position: static;
+  width: 100%;
+  top: 0;
+  z-index: -1;
+}
+
+.sidebar {
+    display: inline;
+    float:left;
+    font-size: 1.1em;
+    //@include shadow();
+    //background-image: url("/Resources/linen-bright.png");
+
+    border-bottom: {
+        style: solid;
+        color: white;
+        width: 2px;
+    }
+    border-top: {
+        style: solid;
+        color: white;
+        width: 2px;
+    }
+
+    img {
+        height: auto;
+        float: left;
+        display: block;
+    }
+
+}
+
+
+
+.main-info {
+  
+    padding-top: 0;
+    font-size: 125%;
+    text-align: center;
+
+    h1 {
+        text-align:center;
+    }
+    p {
+        font-size: 1.25em;
+    }
+}
+
+
+.header-wrap {
+    display: inline-block;
+    padding:{
+        left: .5em;
+        right: .5em;
+        top: .25em;
+        bottom: .25em;
+    }
+
+    border-top: {
+        style: solid;
+        width: 2px;
+        color: white;
+    }
+
+    border-bottom: {
+        style: solid;
+        width: 2px;
+        color: white;
+    }
+}
+
+footer {
+    div.container {
+        clear: both;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        .footer-left {
+            float: left;
+            text-align: left;
+        }
+
+        .footer-right {
+            float: right;
+            text-align: right;
+        }
+    }
+}
+
+
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: Futura, Century Gothic, sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+}

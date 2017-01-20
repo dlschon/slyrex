@@ -11,7 +11,13 @@
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
+
+    <link href="/Styles/main.css" rel="stylesheet">
+
     <asp:contentPlaceholder id="head" runat="server" />
+
+    <link href="/Styles/main-desktop.css" rel="stylesheet" media="screen and (min-width: 481px)">
+    <link href="/Styles/main-mobile.css" rel="stylesheet" media="screen and (max-width: 480px)">
 
 </head>
 <body>
@@ -43,6 +49,12 @@
         <div class="background" data-parallax="scroll" data-image-src="/Resources/background.jpg" data-speed=".3" data-naturalHeight:"1200" data-naturalWidth:"800" data-bleed:"20" data-position:"top" data-androidFix:"false"></div>
 
         <svg class="logo" viewBox="0 0 200 50" fill="currentColor">
+            <line x1="10" x2="190" y1="12" y2="12" stroke="currentColor"/>
+            <text textLength="175" x="12" y="30">SLYREX</text>
+            <line x1="10" x2="190" y1="37" y2="37" stroke="currentColor"/>
+        </svg>
+
+        <svg class="logo-chrome" viewBox="0 0 200 50" fill="currentColor">
             <line x1="10" x2="190" y1="12" y2="12" stroke="currentColor"/>
             <text textLength="200" x="12" y="30">SLYREX</text>
             <line x1="10" x2="190" y1="37" y2="37" stroke="currentColor"/>
