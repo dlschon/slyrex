@@ -30,5 +30,9 @@
   {
     "outputFile": "Styles/photos.css",
     "inputFile": "Styles/photos.scss"
+  },
+  {
+    "outputFile": "Styles/album-modal.css",
+    "inputFile": "Styles/album-modal.scss"
   }
 ]

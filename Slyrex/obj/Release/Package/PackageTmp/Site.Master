@@ -11,7 +11,13 @@
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
+
+    <link href="/Styles/main.css" rel="stylesheet">
+
     <asp:contentPlaceholder id="head" runat="server" />
+
+    <link href="/Styles/main-desktop.css" rel="stylesheet" media="screen and (min-width: 481px)">
+    <link href="/Styles/main-mobile.css" rel="stylesheet" media="screen and (max-width: 480px)">
 
 </head>
 <body>

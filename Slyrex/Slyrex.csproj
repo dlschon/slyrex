@@ -183,6 +183,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Controls\Modal.ascx" />
+    <Content Include="Resources\close.png" />
+    <Content Include="Resources\download.png" />
+    <Content Include="Resources\eternal-sunshine.jpg" />
+    <Content Include="Resources\Slideshow\1-crop-small.JPG" />
+    <Content Include="Resources\Slideshow\1-crop.JPG" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -191,8 +197,9 @@
     <Content Include="Resources\bc-min.png" />
     <Content Include="Resources\fb-min.png" />
     <Content Include="Resources\loader.png" />
-    <Content Include="Resources\sample.xml" />
-    <Content Include="Resources\rss.xml" />
+    <Content Include="Resources\rss.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Resources\Slideshow\1-small.JPG" />
     <Content Include="Resources\Slideshow\1.JPG" />
     <Content Include="Resources\Slideshow\10-small.JPG" />
@@ -215,6 +222,7 @@
     <Content Include="Resources\Slideshow\9.JPG" />
     <Content Include="Resources\soundcloud-min.png" />
     <Content Include="Resources\twitter-min.png" />
+    <Content Include="Scripts\jquery.simplemodal.js" />
     <Content Include="Scripts\photos.js" />
     <Content Include="Scripts\Photoswipe\photoswipe-ui-default.min.js" />
     <Content Include="Scripts\Photoswipe\photoswipe.min.js" />
@@ -244,6 +252,12 @@
     <Content Include="Scripts\main.js" />
     <Content Include="Scripts\parallax.min.js" />
     <Content Include="Scripts\player.js" />
+    <Content Include="Styles\album-modal.css">
+      <DependentUpon>album-modal.scss</DependentUpon>
+    </Content>
+    <Content Include="Styles\album-modal.min.css">
+      <DependentUpon>album-modal.css</DependentUpon>
+    </Content>
     <Content Include="Styles\carousel-mobile.css" />
     <Content Include="Styles\carousel-desktop.css" />
     <Content Include="Styles\default.css">
@@ -277,6 +291,7 @@
     </None>
     <None Include="Properties\PublishProfiles\slyrex.com - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\slyrex.com - Web Deploy.pubxml" />
+    <Content Include="Resources\Audio\Eternal Sunshine.zip" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\ai.0.22.19-build00125.js" />
     <Content Include="Scripts\ai.0.22.19-build00125.min.js" />
@@ -353,6 +368,7 @@
     <Content Include="Styles\default.scss" />
     <Content Include="Styles\news.scss" />
     <Content Include="Styles\photos.scss" />
+    <Content Include="Styles\album-modal.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -378,6 +394,13 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Modal.ascx.cs">
+      <DependentUpon>Modal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Modal.ascx.designer.cs">
+      <DependentUpon>Modal.ascx</DependentUpon>
     </Compile>
     <Compile Include="News.aspx.cs">
       <DependentUpon>News.aspx</DependentUpon>

@@ -1,4 +1,4 @@
-﻿var url = "/Resources/sample.xml";//"https://rssfeedaccount.tumblr.com/rss"
+﻿var url = "/Resources/rss.xml"
 
 $(document).ready(function () {
     console.log('start', url);

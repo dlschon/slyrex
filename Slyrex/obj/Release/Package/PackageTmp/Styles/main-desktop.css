@@ -16,7 +16,7 @@
   margin: 1em; }
   .sidebar img {
     padding: .3em;
-    width: 5em; }
+    width: 100%; }
 
 .main-info {
   overflow: hidden; }
@@ -71,7 +71,9 @@
     display: block;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 50px; } }
+    margin-bottom: 50px; }
+  .sidebar {
+    width: 4em; } }
 
 .background {
   height: 460px; }

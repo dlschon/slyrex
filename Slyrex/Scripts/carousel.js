@@ -11,7 +11,6 @@ for (scaleI; scaleI < a.length; scaleI++) {
     if (scaleI === 3) {
         continue;
     } else {
-        a[scaleI].style.cursor = "default";
         a[scaleI].addEventListener("click", prevDef);
     }
 }
@@ -22,12 +21,10 @@ function prevDef(e) {
 
 function forScale(coverflowPos) {
     for (scaleI = 0; scaleI < a.length; scaleI++) {
-        a[scaleI].style.cursor = "default";
         a[scaleI].addEventListener("click", prevDef);
     }
     for (scaleI = 0; scaleI < cfImg.length; scaleI++) {
         if (cfImg[scaleI].getAttribute("data-coverflow-index") == coverflowPos) {
-            cfImg[scaleI].parentElement.style.cursor = "pointer";
             cfImg[scaleI].parentElement.removeEventListener("click", prevDef);
         }
     }
@@ -113,6 +110,7 @@ function setupCoverflow(coverflowContainer) {
             image.addEventListener('click', jumpToImage);
         });
         window.addEventListener('keyup', onKeyPress);
+        
     });
 }
 

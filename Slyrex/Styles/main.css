@@ -11,6 +11,20 @@ svg {
   text-rendering: optimizeLegibility;
   margin: auto; }
 
+.vid-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0; }
+
+.vid-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
 body {
   background-color: #333; }
 
@@ -35,7 +49,8 @@ body {
     visibility: visible; } }
 
 .info {
-  max-width: 100%; }
+  max-width: 100%;
+  padding-bottom: 20px; }
 
 #navigationBar {
   height: auto;
